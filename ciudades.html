@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudades</title>
+  <meta name="description" content="Las mejores ciudades del mundo para visitar">
+  <meta name="keywords" content="explorando,viajes,excursiones,desiertos,playas,montañas">
+  <link rel="shortcut icon" href="./favicon/favicon.png" type="image/x-icon">
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--FontAweson-->
+  <script src="https://kit.fontawesome.com/f674052da4.js" crossorigin="anonymous"></script>
+  <!-- CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="grid-contenedor">
+
+    <header class="header header--cmodificado">
+  
+      <div class="header__contenedor">
+        <div class="header__logo">
+          <img class="header__imglogo" src="./img/paginalogo.png" alt="logotipo">
+          <p class="header__text">DEV-CODER</p>
+        </div>
+        
+        <input class="header__input" type="checkbox"  id="menu-nav">
+        <label class="fa-solid fa-bars header__icono" for="menu-nav"></label>
+        
+        <nav class="header__nav">
+          <ul class="header__nav-lista">
+            <li class="header__nav-item"><a href="./index.html" class="header__nav-enlace">Inicio</a></li>
+            <li class="header__nav-item"><a href="./ciudades.html" class="header__nav-enlace">Ciudades</a></li>
+            <li class="header__nav-item"><a href="./desierto.html" class="header__nav-enlace">Desiertos</a></li>
+            <li class="header__nav-item"><a href="./montañas.html" class="header__nav-enlace">Montañas</a></li>
+            <li class="header__nav-item"><a href="./playas.html" class="header__nav-enlace">Playas</a></li>
+          </ul>
+        </nav>
+  
+     
+      </div>
+        <div class="header__texto">
+          <h1 class="header__titulociudad">Ciudades</h1>
+          <h2 class="header__subtitulo"> Vive la Aventura de tu vida</h2>
+        </div>
+    
+    </header>
+    <main class="main">
+      <section  class="ciudades container-fluid">
+        <div class="row ciudades__row">
+
+          <article class=" col-md-6  col-lg-4 ciudades__columna ">
+
+            <div class="ciudades__conteimg">
+              <img class="ciudades__img" src="./img/ciudades-chiapassancristobal.png" alt="san cristobal de las casas">
+            </div>
+            <p class="ciudades__texto">San Cristobal de las Casas</p>
+            <div class="ciudades__mas-info">
+              <p class="ciudades__parrafo">San Cristóbal de las Casas.</p>
+              <ul class="ciudades__lista">
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-cañondelsumidero.jpg" alt="cañon del sumidero">
+                  <span class="ciudades__spanlista">Cañon del Sumidero</span>
+                </li>
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-Agua-Azul.jpg" alt="Agua azul">
+                  <span class="ciudades__spanlista">Agua Azul</span>
+                </li>
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-palenque-chiapas.jpg" alt="palenque chiapas">
+                  <span class="ciudades__spanlista">Palenque Chiapas</span>
+                </li>
+              </ul>
+            </div>
+
+          </article>
+
+          <article class=" col-md-6  col-lg-4 ciudades__columna ">
+            <div class="ciudades__conteimg">
+              <img class="ciudades__img" src="./img/ciudades-merida.jpg" alt="Ciudad de Merida Yucatan">
+            </div>
+            <p class="ciudades__texto">Mèrida Yucatàn Comidas,Excursiones y Tours</p>
+            <div class="ciudades__mas-info">
+              <p class="ciudades__parrafo">Merida Yucatan</p>
+              <ul class="ciudades__lista">
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-chichenitza.jpg" alt="chichen-itza">
+                  <span class="ciudades__spanlista">Chichen-itza</span>
+                </li>
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-progreso.jpg" alt="playa de progreso">
+                  <span class="ciudades__spanlista">Progreso</span>
+                </li>
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-cenotes.jpg" alt="Cenotes de merida">
+                  <span class="ciudades__spanlista">Cenotes</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class=" col-md-12 col-lg-4 ciudades__columna ">
+            <div class="ciudades__conteimg">
+              <img class="ciudades__img" src="./img/ciudades-oaxaca.jpg" alt="Ciudad de Oaxaca de juarez">
+            </div>
+            <p class="ciudades__texto">Gastronomia,cultura,ruinas arqueologicas y màs</p>
+            <div class="ciudades__mas-info">
+              <p class="ciudades__parrafo">Oaxaca de juarez</p>
+              <ul class="ciudades__lista ciudades__lista--oaxaca">
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/ciudades-hierve-el-agua.jpg" alt="hierve el agua oaxaca    ">
+                  <span class="ciudades__spanlista">Hierve el agua</span>
+                </li>
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/monte-alban.jpg" alt="Monte Alban">
+                  <span class="ciudades__spanlista">Monte Alban</span>
+                </li>
+                <li class="ciudades__item">
+                  <img class="ciudades__imglista" src="./img/arbol-de-tule.jpg" alt="Arbol del tule">
+                  <span class="ciudades__spanlista">Arbol del tule</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+        </div>   
+      </section>
+      <section class="excursiones">
+        <article class="excursiones__articulo">
+          <h4 class="excursion__subtitulo">
+            Cenote Ik Kil
+          </h4>
+          <p class="excursiones__parrafo"> Ik kil es el majestuoso cenote, en donde su superficie se encuentra rodeada de mucha vegetación, mientras usted  entra y va bajando por las escaleras hechas de piedra ahí encontrará pequeños balcones en donde podrá observar lo hermoso que es  a su alrededor.</p>
+          <p class="excursiones__parrafo">Después llegará a una plataforma que le da el acceso a las aguas cristalinas y frescas, podrá ver la  profundidad en la que se encuentra y también ver sus pequeños bagres que viven en él.</p>
+
+        </article>
+        <div class="excursiones__conteimg">
+          <img class="excursiones__img" src="./img/excursionMerida-Cenote-Ik-Kil.jpg" alt="cenotes de merida">
+        </div>
+      </section>
+     
+    </main>
+    <footer class="footer">
+      <div class="footer__contenedor">
+        <div class="footer__elemento"></div>
+        <div class="footer__redes-sociales">
+          <i class="fa-brands fa-facebook footer__icono"></i>
+          <i class="fa-brands fa-facebook-messenger footer__icono"></i>
+          <i class="fa-brands fa-twitter footer__icono"></i>
+          <i class="fa-brands fa-linkedin footer__icono"></i>
+          <i class="fa-brands fa-youtube footer__icono"></i>
+          <div class="footer__elemento footer__icono"></div>
+        </div>
+        <div class="footer__elemento"></div>
+      </div>
+      <p class="footer__parrafo">Copyright@2022 DeveloperJs,Inc </p>
+      <a class="footer__enlace"  href="#">Informacion legal</a>
+      <a class="footer__enlace" href="#">Politicas de privacidad</a>
+    </footer>
+
+
+  </div>
+
+
+
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</body>
+</html>
