@@ -417,7 +417,7 @@
   font-size: 0.9em;
 }
 .actividades__texto {
-  margin-top: 1em;
+  margin-top: 0.9em;
   border-bottom: 1px solid grey;
 }
 .actividades__column {
@@ -448,6 +448,11 @@
   }
   .actividades__parrafo {
     font-size: 0.9em;
+  }
+}
+@media (max-width: 557) {
+  .header__titulodesierto {
+    font-size: 1.5em;
   }
 }
 @media (max-width: 767px) {
@@ -650,18 +655,9 @@
   }
 }
 /*===================================== SECCION HEADER*/
-.header__contenedor {
-  margin: 0;
-  padding: 0;
-}
-
-.header--mtmodificado {
-  width: 100%;
-}
-
 .header__titulo--montana {
-  font-size: 5em;
-  color: white;
+  font-size: 4em;
+  color: rgb(239, 238, 238);
 }
 
 /*=================================================*/
@@ -725,15 +721,6 @@
   border-radius: 50%;
   object-fit: cover;
 }
-
-.senderismo--modificado {
-  background-image: url("../img/senderismo2-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: flex-start;
-}
-
 .senderismo__conteimg2 {
   width: 300px;
   height: 300px;
@@ -742,7 +729,6 @@
   right: 120px;
   z-index: 1;
 }
-
 .senderismo__img2 {
   width: 100%;
   margin: auto;
@@ -750,20 +736,29 @@
   border-radius: 50%;
   object-fit: cover;
 }
-
-.rutas {
-  padding: 60px 100px;
+.senderismo .senderismo--modificado {
+  background-image: url("../img/senderismo2-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: flex-start;
 }
 
+.rutas {
+  width: 100%;
+  height: auto;
+  padding: 60px 100px;
+}
 .rutas__parrafo {
   width: 100%;
-  color: rgb(184, 184, 184);
+  color: rgb(239, 238, 238);
   font-family: "Comfortaa";
   font-size: 1em;
   margin-top: 50px;
 }
 
 .ancho-img {
+  width: 100%;
   height: 280px;
   object-fit: cover;
 }
@@ -802,6 +797,7 @@
     margin-left: 0;
   }
   .rutas {
+    width: 100%;
     flex-direction: column;
   }
   .rutas__parrafo {
@@ -809,16 +805,17 @@
     margin-top: 40px;
   }
   .ancho-img {
+    width: 100%;
     height: 280px;
     object-fit: cover;
   }
-  .card {
-    width: 50rem;
-  }
 }
-@media (min-width: 560px) {
-  .header {
-    height: 100vh;
+@media (max-width: 560px) {
+  .rutas {
+    padding: 40px;
+  }
+  .grid-contenedor {
+    padding: 0;
   }
 }
 /*===================================== SECCION HEADER*/
@@ -826,15 +823,8 @@
   background-image: url("../img/Playa-del-Carmen.jpg");
 }
 
-.header__video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -4;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+.header__titulo {
+  color: rgb(239, 238, 238);
 }
 
 .modi {
@@ -843,8 +833,6 @@
 
 .card--playa {
   width: 200px;
-  padding: 0;
-  margin: 0 5px;
 }
 
 .card-img-playa {
@@ -866,16 +854,16 @@
   margin-top: 30px;
 }
 .main .aventura {
-  padding: 150px 40px 0 40px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   position: relative;
 }
 .main .aventura__articulo {
-  text-align: left;
-  margin-left: 110px;
+  width: 90%;
+  margin: auto;
+  padding: 60px;
 }
 .main .aventura__body {
-  padding: 40px 40px 40px 190px;
   width: 100%;
 }
 .main .aventura__body .bg-boton {
@@ -895,27 +883,54 @@
   border-radius: 50%;
   object-fit: cover;
 }
-
-.card--playa {
+.main .aventura .card-title {
+  margin-bottom: 20px;
+  font-size: 2.1em;
+}
+.main .card--playa {
   width: 300px;
+  margin: 10px;
 }
 
 /*============================= media queries*/
+@media (max-width: 808px) {
+  .card-text {
+    font-size: 1.2em;
+  }
+  .header__titulosize {
+    font-size: 3.3em;
+  }
+}
 @media (max-width: 560px) {
+  .main .aventura__articulo {
+    padding: 20px;
+  }
+  .card-text {
+    font-size: 1.1em;
+  }
+  .header__texto {
+    width: 80%;
+    margin: auto;
+  }
+  .header__titulosize {
+    font-size: 2em;
+    color: white;
+  }
   .header {
     height: 100vh;
   }
-}
-.main__contenedor--playa {
-  flex-direction: column;
-}
-
-.card--playa {
-  width: 60rem;
-}
-
-.card-img-playa {
-  object-fit: cover;
+  .main__contenedor--playa {
+    flex-direction: column;
+  }
+  .main .card--playa {
+    width: 100%;
+    margin: 10px;
+    border: 2px solid red;
+  }
+  .card-img-playa {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
