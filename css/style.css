@@ -46,10 +46,10 @@
   margin-top: 5px;
 }
 .header__text {
-  margin-top: 8px;
+  margin-top: 15px;
   margin-left: 5px;
   font-weight: bold;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-family: "Roboto", sans-serif;
   color: white;
 }
@@ -473,9 +473,10 @@
   }
   .actividades__subtitulo {
     font-size: 1.1em;
+    margin: 0;
+    line-height: normal;
   }
   .actividades__etiqueta {
-    margin-top: -10px;
     font-size: 1.8em;
     font-weight: bold;
   }
@@ -519,7 +520,7 @@
 }
 
 .header__titulociudad {
-  font-size: 5em;
+  font-size: 4em;
   color: white;
   animation: animate1;
   animation-duration: 2s;
@@ -662,11 +663,7 @@
 
 /*=================================================*/
 /*===================================== SECCION MAIN*/
-.main--bg {
-  background-color: rgb(22, 22, 22);
-}
-
-.senderismo {
+.main .senderismo {
   width: 100%;
   height: 340px;
   position: relative;
@@ -677,35 +674,35 @@
   display: flex;
   justify-content: flex-end;
 }
-.senderismo__contenedor {
+.main .senderismo__contenedor {
   width: 50%;
   height: 250px;
   margin-right: 100px;
 }
-.senderismo__contenedor2 {
+.main .senderismo__contenedor2 {
   width: 50%;
   height: 250px;
-  margin-left: 100px;
+  margin-right: 340px;
 }
-.senderismo__texto {
+.main .senderismo__texto {
   margin-top: 70px;
   color: white;
 }
-.senderismo__texto2 {
-  margin-top: 70px;
+.main .senderismo__texto2 {
+  margin-top: 20px;
   color: white;
 }
-.senderismo__parrafo {
+.main .senderismo__parrafo {
   color: white;
   width: 75%;
   margin-top: 20px;
 }
-.senderismo__parrafo2 {
+.main .senderismo__parrafo2 {
   color: white;
   width: 75%;
   margin-top: 20px;
 }
-.senderismo__conteimg {
+.main .senderismo__conteimg {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -714,14 +711,14 @@
   left: 120px;
   z-index: 1;
 }
-.senderismo__img {
+.main .senderismo__img {
   width: 100%;
   margin: auto;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
-.senderismo__conteimg2 {
+.main .senderismo__conteimg2 {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -729,44 +726,44 @@
   right: 120px;
   z-index: 1;
 }
-.senderismo__img2 {
+.main .senderismo__img2 {
   width: 100%;
   margin: auto;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
-.senderismo .senderismo--modificado {
-  background-image: url("../img/senderismo2-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: flex-start;
-}
-
-.rutas {
+.main .rutas {
   width: 100%;
   height: auto;
   padding: 60px 100px;
 }
-.rutas__parrafo {
+.main .rutas__parrafo {
   width: 100%;
   color: rgb(239, 238, 238);
   font-family: "Comfortaa";
   font-size: 1em;
   margin-top: 50px;
 }
-
-.ancho-img {
+.main .ancho-img {
   width: 100%;
   height: 280px;
   object-fit: cover;
 }
-
-.card__parrafo {
+.main .card__parrafo {
   color: white;
   font-family: "Comfortaa";
   font-size: 0.9em;
+}
+.main .senderismo--modificado {
+  background-image: url("../img/senderismo2-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main--bg {
+  background-color: rgb(22, 22, 22);
 }
 
 /*=================================== MEDIA QUERIES*/
@@ -774,61 +771,57 @@
   .senderismo__conteimg, .senderismo__conteimg2 {
     display: none;
   }
-  .senderismo {
+  .main .senderismo {
     justify-content: center;
-    height: 300px;
+    height: 350px;
   }
-  .senderismo__parrafo {
+  .main .senderismo__parrafo {
     width: 100%;
     margin-bottom: 0;
   }
-  .senderismo__parrafo2 {
+  .main .senderismo__parrafo2 {
     width: 100%;
     margin-bottom: 0;
   }
-  .senderismo__contenedor {
+  .main .senderismo__contenedor {
     margin-right: 0;
     text-align: center;
     width: 80%;
   }
-  .senderismo__contenedor2 {
+  .main .senderismo__contenedor2 {
     width: 80%;
     text-align: center;
-    margin-left: 0;
+    margin: auto;
   }
-  .rutas {
+  .main .rutas {
     width: 100%;
     flex-direction: column;
   }
-  .rutas__parrafo {
+  .rutas .rutas__parrafo {
     width: 100%;
     margin-top: 40px;
   }
-  .ancho-img {
+  .rutas .ancho-img {
     width: 100%;
     height: 280px;
     object-fit: cover;
   }
 }
 @media (max-width: 560px) {
-  .rutas {
-    padding: 40px;
+  .main .rutas {
+    padding: 20px;
   }
   .grid-contenedor {
     padding: 0;
   }
 }
 /*===================================== SECCION HEADER*/
-.header--pmodificado {
-  background-image: url("../img/Playa-del-Carmen.jpg");
-}
-
 .header__titulo {
   color: rgb(239, 238, 238);
 }
 
-.modi {
-  padding-left: 0;
+.header--pmodificado {
+  background-image: url("../img/Playa-del-Carmen.jpg");
 }
 
 .card--playa {
@@ -895,7 +888,7 @@
 /*============================= media queries*/
 @media (max-width: 808px) {
   .card-text {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   .header__titulosize {
     font-size: 3.3em;
@@ -925,12 +918,12 @@
   .main .card--playa {
     width: 100%;
     margin: 10px;
-    border: 2px solid red;
   }
   .card-img-playa {
     width: 100%;
     object-fit: cover;
   }
 }
+/*=========================================================*/
 
 /*# sourceMappingURL=style.css.map */
