@@ -324,9 +324,6 @@
   .grid-contenedor {
     padding: 0;
   }
-  .header {
-    height: 100vh;
-  }
   .header__contenedor {
     padding: 0 15px;
   }
@@ -386,7 +383,7 @@
 }
 /*===================================== SECCION HEADER*/
 .header--dmodificado {
-  background-image: url("../img/header-desierto1.jpg");
+  background-image: url("../img/desierto-pagina3.jpg");
 }
 
 .header__titulodesierto {
@@ -513,7 +510,7 @@
 }
 /*================================ HEADER*/
 .header--cmodificado {
-  background-image: url("../img/ciudadesfondo.jpg");
+  background-image: url("../img/ciudades-pagina1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -659,6 +656,10 @@
 .header__titulo--montana {
   font-size: 4em;
   color: rgb(239, 238, 238);
+}
+
+.header--mtmodificado {
+  background-image: url("../img/montain.jpg");
 }
 
 /*=================================================*/
@@ -819,9 +820,12 @@
 .header__titulo {
   color: rgb(239, 238, 238);
 }
+.header__nav-enlace:hover {
+  color: white;
+}
 
 .header--pmodificado {
-  background-image: url("../img/Playa-del-Carmen.jpg");
+  background-image: url("../img/plya-pagina5.jpg");
 }
 
 .card--playa {
@@ -852,9 +856,10 @@
   position: relative;
 }
 .main .aventura__articulo {
-  width: 90%;
+  width: 85%;
   margin: auto;
   padding: 60px;
+  border: 4px solid rgb(230, 228, 228);
 }
 .main .aventura__body {
   width: 100%;
@@ -886,17 +891,28 @@
 }
 
 /*============================= media queries*/
-@media (max-width: 808px) {
+@media (max-width: 906px) {
   .card-text {
     font-size: 1.5em;
   }
   .header__titulosize {
     font-size: 3.3em;
   }
+  .footer {
+    font-size: 1.1em;
+  }
 }
-@media (max-width: 560px) {
+@media (max-width: 814px) {
+  .footer {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 660px) {
   .main .aventura__articulo {
     padding: 20px;
+  }
+  .footer {
+    font-size: 1em;
   }
   .card-text {
     font-size: 1.1em;
@@ -905,12 +921,12 @@
     width: 80%;
     margin: auto;
   }
+  .header {
+    height: 100vh;
+  }
   .header__titulosize {
     font-size: 2em;
     color: white;
-  }
-  .header {
-    height: 100vh;
   }
   .main__contenedor--playa {
     flex-direction: column;
